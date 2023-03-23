@@ -1,0 +1,41 @@
+.lessen{
+    width: 80vw;
+    font-size: 30px;
+    margin-left:15px ;
+}
+.backgroundOran{
+    background: rgba(197, 170, 123, 0.64);
+    font-size: 20px;
+}
+.marg{
+    margin: 10px;
+}
+.Console{
+    color:white;
+    text-align: right;
+}
+.Console_Up_Gray{
+    border: darkgray 5px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    text-align: left;
+    font-size: 15px;
+    padding: 5px;
+    background: darkgray;
+    color: gray;
+}
+.Console_Down_Black{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    text-align: left;
+    font-size: 30px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    background: black;
+    color: white;
+}
+margin-left
