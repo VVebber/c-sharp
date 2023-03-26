@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <title>C# syntax</title>
+</head>
+<body>
+<div>
+  <!--1--><div class="flex background_black flex_dirction border_black content_center">
+  <header  id="header">
+    <script src="../Javascript/One.js"></script>
+  </header>
+  <!--1--></div>
+  <!--А--><div class="flex">
+  <!--2--><div>
+  <header  class="flex background_gray" id="side_piece">
+    <script src="../Javascript/One.js"></script>
+  </header>
+  <!--2--></div>
+  <!--3--><div class="lessen block" >
+  <h1>Константы и readonly поля</h1>
+  <p>Константы и readonly поля - это способы определения переменных в C#, которые не могут быть изменены во время выполнения программы. Однако, есть некоторые различия между ними.</p>
+  <!--Константа: Начало--><div>
+  <h3>Константа</h3>
+  <p>Константы - это переменные, которые задаются единожды во время компиляции программы и не могут быть изменены во время выполнения программы. Они объявляются с помощью ключевого слова const, за которым следует тип данных, имя и значение константы. Пример:</p>
+  <div class="font_size25xp"><!--Консоль Начало -->
+    <div class="Console inline-block margin_bottom20px" >
+      <div CLASS="Console_Up_Gray">C#</div>
+      <div class="Console_Down_Black"> <p>const double Pi = 3.14159;
+       <br>const Pi=31,41; // Ошика, нельзя изменять.
+      </p></div>
+    </div>
+  </div> <!--Консоль конец -->
+  <!--Константа: Конец--></div>
+  <!-- Поля readonly: Начало --> <div>
+  <h3>Поля readonly</h3>
+  <p>Поля только для чтения (readonly) - это переменные, значения которых могут быть установлены только во время выполнения конструктора и не могут быть изменены в дальнейшем. Они могут быть определены только в теле класса, но не в методах. Для создания поля только для чтения в C# используется ключевое слово readonly. Пример:</p>
+  <div class="font_size25xp"><!--Консоль Начало -->
+    <div class="Console inline-block margin_bottom20px" >
+      <div CLASS="Console_Up_Gray">C#</div>
+      <div class="Console_Down_Black">  <p style="white-space: pre">
+class MyClass
+    {
+    readonly int myReadOnlyField;
+
+    public MyClass(int value)
+    {
+         myReadOnlyField = value;
+    }
+}      </p></div>
+    </div>
+  </div> <!--Консоль конец -->
+  <p>О readonly полях мы ещё поговорим в будующем.</p>
+  <!--Поля readonly: Конец--></div>
+  <!--3--></div>
+  <!--A--></div>
+
+  <!----></div>
+</div>
+<div style="height: 100px;     background: rgb(40, 42, 53); clear: both;"></div>
+</body>
+</html>

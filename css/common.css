@@ -10,6 +10,9 @@ body{
 .flex {
     display: flex;
 }
+.grid {
+    display: grid;
+}
 .block{
     display: block;
 }
@@ -47,17 +50,32 @@ a {
 .background_gray {
     background: #a8a8a8;
 }
+.background_gray2 {
+    background: #9aa3a4;
+}
 .border_black{
     border: 2mm solid rgb(40, 42, 53);
 }
 .border-right{
-    border-right: 1mm solid  #a80404;
+    border-right: 1.5mm solid  #a80404;
 }
 .border-end{
     border-block-end: 2mm solid #a80404;
 }
+.border_black2px{
+    border: 2px solid  black;
+}
 .padding-out {
     padding-bottom: 30px;
+}
+.padding-out10px {
+    padding-bottom: 10px;
+}
+.padding_left{
+    padding-left: 10px;
+}
+.padding_top{
+    padding-top: 10px;
 }
 .padding10px{
     padding: 10px;
@@ -68,11 +86,20 @@ a {
 .margin10px{
     margin: 10px;
 }
+.margin5px{
+     margin: 5px;
+}
 .margin20px{
     margin: 20px;
 }
+.margin_bottom20px{
+    margin-bottom: 20px ;
+}
 .font_size20xp{
     font-size: 20px;
+}
+.font_size23xp{
+    font-size: 23px;
 }
 .font_size25xp{
     font-size: 25px;
@@ -86,8 +113,14 @@ a {
 .font-weight_bold{
 font-weight: bold;
 }
+.list-style_inside{
+    list-style: inside;
+}
 .width45vw {
     width: 45vw;
+}
+.width25vw {
+    width: 21vw;
 }
 .black{
     color:black;
@@ -96,8 +129,56 @@ font-weight: bold;
     color:red;
 }
 .blue{
-    color:blue;
+    color:dodgerblue;
 }
 .green{
     color:green;
+}
+
+
+
+
+
+
+.lessen{
+    width: 70%;
+    font-size: 30px;
+    margin-left:15px ;
+}
+.backgroundOran {
+    background: rgba(197, 170, 123, 0.64);
+}
+.border2 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 2px;
+    border: red 2px dotted;
+}
+.Console{
+    color:white;
+    text-align: right;
+}
+.Console_Up_Gray{
+    border: darkgray 5px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    text-align: left;
+    font-size: 15px;
+    padding: 5px;
+    background: darkgray;
+    color: gray;
+}
+.Console_Down_Black{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    text-align: left;
+    font-size: 30px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    background: black;
+    color: white;
 }

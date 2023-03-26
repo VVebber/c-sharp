@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <title>C# syntax</title>
+</head>
+<body>
+<div>
+  <!--1--><div class="flex background_black flex_dirction border_black content_center">
+  <header  id="header">
+    <script src="../Javascript/One.js"></script>
+  </header>
+  <!--1--></div>
+  <!--А--><div class="flex">
+  <!--2--><div>
+  <header  class="flex background_gray" id="side_piece">
+    <script src="../Javascript/One.js"></script>
+  </header>
+  <!--2--></div>
+  <!--3--><div class="lessen block" style="">
+ <h1>Ввод/вывод данных</h1>
+  <!--Вывод даных: Начало--><div>
+  <h3>Консольный вывод</h3>
+  <p>Консольный вывод в языке C# позволяет отображать текстовую информацию в консольном окне. Это может быть полезно для отладки приложений или для создания текстового интерфейса для пользователей.</p>
+  <p>Для вывода текста на консоль используется метод Console.WriteLine(). Он позволяет вывести текст на новой строке и автоматически перейти на следующую. Если же нужно вывести текст без перевода на новую строку, то используется метод Console.Write().</p>
+  <p>Примеры использования методов:</p>
+  <div  class="Console inline-block"><!--начало консоли-->
+    <div class="Console_Up_Gray ">   C#   </div>
+    <div class="Console_Down_Black">   <p>
+      // Вывод текста на консоль с переходом на новую строку<br>
+      Console.WriteLine("Hello, world!");<br>
+      <br>
+      // Вывод текста на консоль без перехода на новую строку<br>
+      Console.Write("Enter your name: ");
+    </p></div>
+  </div> <!--конец консоли-->
+  <p>Кроме того, методы Console.WriteLine() и Console.Write() могут принимать аргументы, которые будут автоматически преобразованы в строку. Например:</p>
+  <div  class="Console inline-block"><!--начало консоли-->
+    <div class="Console_Up_Gray ">   C#   </div>
+    <div class="Console_Down_Black">   <p>
+      int age = 25;<br>
+      Console.WriteLine("My age is: " + age);<br>
+      <br>
+      double temperature = 36.6;<br>
+      Console.WriteLine("Body temperature: {0} C", temperature);
+    </p></div>
+  </div> <!--конец консоли-->
+  <p>В первом примере переменная age автоматически преобразуется в строку и выводится на консоль. Во втором примере используется форматированный вывод, где {0} заменяется на значение переменной temperature.</p>
+  <!--Вывод даных: Конец--></div>
+  <!--Ввод даных: Начало--><div>
+  <h3>Ввод даных</h3>
+  <p>Консольный ввод - это способ ввода данных в программу через командную строку или терминал. В C# консольный ввод можно реализовать с помощью класса Console.</p>
+  <p>Для чтения данных из консоли в C# используется метод Console.ReadLine(). Этот метод считывает следующую строку из входного потока консоли и возвращает ее в качестве строки.</p>
+  <p>Например, следующий код читает строку, введенную пользователем, и сохраняет ее в переменной input:</p>
+  <div  class="Console inline-block"><!--начало консоли-->
+    <div class="Console_Up_Gray ">   C#   </div>
+    <div class="Console_Down_Black">   <p>
+      string input = Console.ReadLine();
+    </p></div>
+  </div> <!--конец консоли-->
+  <p>Важно отметить, что метод Console.ReadLine() всегда возвращает строку, даже если пользователь ввел число или другой тип данных. Если требуется работать с другими типами данных, необходимо преобразовать введенную строку в нужный тип, используя соответствующие методы преобразования типов данных, такие как:</p>
+  <ul>
+    <li>ToInt32: Преобразует значение указанного string в эквивалентное 32-разрядное целое число со знаком.</li>
+    <li>ToDouble: Преобразует значение указанного string к эквивалентному числу с плавающей запятой двойной точности.</li>
+    <li>ToBoolean: Преобразует значение указанного string в эквивалентное логическое значение.</li>
+    <li>ToString: Преобразует значение указанного объекта в его эквивалентное строковое представление.</li>
+    </li>
+  </ul>
+  <div  class="Console inline-block margin_bottom20px"><!--начало консоли-->
+    <div class="Console_Up_Gray ">   C#   </div>
+    <div class="Console_Down_Black">   <p>
+      Console.Write("Введите имя: ");<br>
+      string? name = Console.ReadLine();<br>
+      <br>
+      Console.Write("Введите возраст: ");<br>
+      int age = Convert.ToInt32(Console.ReadLine());<br>
+      <br>
+      Console.Write("Введите рост: ");<br>
+      double height = Convert.ToDouble(Console.ReadLine());<br>
+      <br>
+      Console.Write("Введите размер зарплаты: ");<br>
+      decimal salary = Convert.ToDecimal(Console.ReadLine());<br>
+    </p></div>
+  </div> <!--конец консоли-->
+  <!--Ввод даных: Конец--></div>
+  <!--3--></div>
+  <!--А--></div>
+</div>
+<div style="height: 100px;     background: rgb(40, 42, 53); clear: both;"></div>
+</body>
+</html>
