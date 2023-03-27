@@ -2,27 +2,45 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="../css/common.css">
-</style>
   <meta charset="UTF-8">
-    <title>Title</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+
+  <title>Title</title>
 </head>
 <body>
+<pre class="white_space"><code class="language-csharp">// Пример создания класса на C#
+  using System;
 
-<div class="inline-block">
-  <div CLASS="Console_Up_Gray">C#</div>
-<div class="padding5px inline-flex border_gray2px background_olive">
-  <div class="border-right_grin padding5px grey">
-    <p>1
-    <p>2
-    <p>3
-  </div>
-  <div class="padding5px">
-    <p> <b class="blue1"></b>float <b class="blue2">a</b> = <b class="green2">3.14f</b>;</p>
-    <p> <b class="blue1"></b>double <b class="blue2">b</b> = <b class="green2">2.71828</b>;</p>
-    <p> <b class="blue1"></b>decimal <b class="blue2">c</b> = <b class="green2">1.23456789m</b>;</p>
-  </div>
-</div>
-</div>
+  class Person
+  {
+  private string name;
+  private int age;
+
+  public Person(string name, int age)
+  {
+  this.name = name;
+  this.age = age;
+  }
+
+  public void SayHello()
+  {
+  Console.WriteLine("Hello, my name is " + name + " and I am " + age + " years old.");
+  }
+  }
+
+  class Program
+  {
+  static void Main(string[ ] args)
+  {
+  Person john = new Person("John", 30);
+  john.SayHello();
+  }
+  }
+</code>
+</pre>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-csharp.min.js"></script>
+</code></p>
 </body>
 </html>
-<p> <b class="blue1"></b> <b class="blue2"></b> = <b class="green2"></b>;</p>

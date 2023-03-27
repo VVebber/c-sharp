@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/common.css">
-    <title>C# syntax</title>
+    <title>C# type data</title>
 </head>
 <body>
 <div>
-    <!--1--><div class="flex background_black flex_dirction border_black content_center">
+    <div class="flex background_black flex_dirction border_black content_center">
     <header  id="header">
         <script src="../Javascript/One.js"></script>
     </header>
-    <!--1--></div>
-    <!--А--><div class="flex">
-    <!--2--><div>
+    </div>
+  <div class="flex">
+ <div>
     <header  class="flex background_gray" id="side_piece">
         <script src="../Javascript/One.js"></script>
     </header>
-    <!--2--></div>
-    <!--3--><div class="lessen block" >
-    <div> <!--Целочисленные типы данных: Начало-->
+   </div>
+  <div class="lessen block" >
+    <div>
         <h1>Целочисленные типы данных</h1>
         <p class="font_size25xp" style="padding: 0; margin: 0">В языке C# целочисленные типы данных представлены следующими ключевыми словами:</p>
          <ul class="font_size25xp"><li><b class="padding_left">sbyte</b> - знаковый 8-битный целочисленный тип данных. Может принимать значения от -128 до 127. </li>
@@ -31,9 +31,9 @@
              <li><b>long</b> - знаковый 64-битный целочисленный тип данных. Может принимать значения от -9223372036854775808 до 9223372036854775807.</li>
              <li><b>ulong</b> - беззнаковый 64-битный целочисленный тип данных. Может принимать значения от 0 до 18446744073709551615.</li>
          </ul>
-        <div class="inline-block">
+        <div class="inline-block font_size25xp">
             <div CLASS="Console_Up_Gray">C#</div>
-            <div class="padding5px inline-flex border_gray2px background_olive">
+            <div class="padding5px inline-flex border_gray2px background_olive ">
                 <div class="border-right_grin padding5px grey">
                     <p>1
                     <p>2
@@ -53,15 +53,15 @@
             Например, byte занимает 1 байт (8 бит), а long занимает 8 байтов (64 бита).
             <br>Также в языке C# есть модификаторы signed и unsigned, которые можно использовать
             вместо ключевых слов sbyte, short, int и long. Например, можно определить знаковый 32-битный целочисленный тип данных с помощью ключевых слов int или signed int.</p>
-    </div> <!--Целочисленные типы данных: конец-->
-    <div> <!--Вещественные типы данных: Начало -->
+    </div>
+    <div>
         <h1>Вещественные типы данных</h1>
         <p class="font_size25xp"> В языке C# существуют три вещественных типа данных:</p>
         <ul class="font_size25xp"><li><b>float</b> - представляет 64-битное число с плавающей точкой. Он может хранить числа от -1.7 × 10^308 до 1.7 × 10^308 и имеет точность около 15 знаков после запятой.</li>
             <li><b>double</b> - представляет 64-битное число с плавающей точкой. Он может хранить числа от -1.7 × 10^308 до 1.7 × 10^308 и имеет точность около 15 знаков после запятой.</li>
             <li><b>decimal</b> - представляет 128-битное число с плавающей точкой. Он может хранить числа от ±1.0 × 10^-28 до ±7.9 × 10^28 и имеет точность около 28 знаков после запятой.</li>
             </ul>
-        <div class="inline-block">
+        <div class="inline-block font_size25xp">
             <div CLASS="Console_Up_Gray">C#</div>
             <div class="padding5px inline-flex border_gray2px background_olive">
                 <div class="border-right_grin padding5px grey">
@@ -70,46 +70,57 @@
                     <p>3
                 </div>
                 <div class="padding5px">
-                    <p> <b class="blue1"></b>float <b class="blue2">a</b> = <b class="green2">3.14f</b>;</p>
-                    <p> <b class="blue1"></b>double <b class="blue2">b</b> = <b class="green2">2.71828</b>;</p>
-                    <p> <b class="blue1"></b>decimal <b class="blue2">c</b> = <b class="green2">1.23456789m</b>;</p>
+                    <p> <b class="blue1">float </b><b class="blue2">a</b> = <b class="green2">3.14f</b>;</p>
+                    <p> <b class="blue1">double </b><b class="blue2">b</b> = <b class="green2">2.71828</b>;</p>
+                    <p> <b class="blue1">decimal </b><b class="blue2">c</b> = <b class="green2">1.23456789m</b>;</p>
                 </div>
             </div>
         </div>
         <p class="font_size25xp">Вещественные типы данных используются для представления чисел с плавающей точкой. При работе с вещественными типами данных необходимо учитывать особенности округления и погрешности вычислений, связанные с использованием чисел с плавающей точкой.</p>
-    </div><!--Вещественные типы данных: Конец -->
-    <div> <!--Типы данных для символов и строк: Начало -->
+    </div>
+    <div>
         <h1>Типы данных для символов и строк</h1>
         <p class="font_size25xp">Оба типа данных имеют важное значение при работе с текстовыми данными в C#.</p>
         <ul class="font_size25xp"><li><b>char</b> представляет одиночный символ в формате Unicode, который занимает 2 байта в памяти. Он может быть инициализирован как символом, так и его числовым значением в десятичной или шестнадцатеричной системе счисления.</li>
             <li><b>string</b> представляет набор символов Unicode, которые образуют строку. Он может быть инициализирован с помощью двойных кавычек и поддерживает множество методов для работы со строками.</li>
-            </li>
         </ul>
-        <div class="font_size25xp"><!--Консоль Начало -->
-            <div class="Console inline-block margin_bottom20px" >
-                <div CLASS="Console_Up_Gray">C#</div>
-                <div class="Console_Down_Black"> <p> char myChar = 'A';<br>
-                    string message = "Hello, world!";</p></div>
+        <div class="inline-block font_size25xp">
+            <div CLASS="Console_Up_Gray">C#</div>
+            <div class="padding5px inline-flex border_gray2px background_olive">
+                <div class="border-right_grin padding5px grey">
+                    <p>1
+                    <p>2
+                </div>
+                <div class="padding5px">
+                    <p> <b class="blue1">char </b><b class="blue2">myChar</b> = <b class="green2">'A'</b>;</p>
+                    <p> <b class="blue1">string </b><b class="blue2">message</b> = <b class="green2">"Hello, world!"</b>;</p>
+                </div>
             </div>
-        </div> <!--Консоль конец -->
-    </div><!--Типы данных для символов и строк: Конец-->
-    <div> <!--Логический тип данных: Начало -->
+        </div>
+    </div>
+    <div>
         <h1>Логический тип данных</h1>
         <p class="font_size25xp"> Логический тип данных (bool) в C# может принимать только два значения: true (истина) и false (ложь). Он используется для представления логических выражений, результатом которых может быть только одно из двух значений - истина или ложь. </p>
-       <div class="font_size25xp"><!--Консоль Начало -->
-        <div class="Console inline-block margin_bottom20px" >
+        <div class="inline-block font_size25xp">
             <div CLASS="Console_Up_Gray">C#</div>
-            <div class="Console_Down_Black"> <p>bool isTrue = true; <br>
-                                                bool isFalse = false;</p></div>
+            <div class="padding5px inline-flex border_gray2px background_olive">
+                <div class="border-right_grin padding5px grey">
+                    <p>1
+                    <p>2
+                </div>
+                <div class="padding5px">
+                    <p> <b class="blue1">bool </b><b class="blue2">isTrue </b> = <b class="green2">true</b>;</p>
+                    <p> <b class="blue1">bool </b><b class="blue2">isFalse</b> = <b class="green2">false</b>;</p>
+                </div>
+            </div>
         </div>
-    </div> <!--Консоль конец -->
         <p class="font_size25xp">Логические типы данных используются в условных операторах (if, while, for, switch) для
             проверки условий и принятия решений на основе этих условий. Также они
             используются в булевых выражениях для объединения и инвертирования условий.
         </p>
-</div><!--Логический тип данных: Конец -->
-    <!--3--></div>
-    <!--А--></div>
+</div>
+  </div>
+     </div>
 </div>
 <div style="height: 100px;     background: rgb(40, 42, 53); clear: both;"></div>
 </body>
