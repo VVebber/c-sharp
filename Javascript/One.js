@@ -24,7 +24,7 @@ request2.onload = function() {
  target2.appendChild(container2);
 };
 request2.send();
-//
+// CТЕНА
 let container3 = document.createElement('div');
 let request3 = new XMLHttpRequest();
 request3.open('GET', './../page_elements/side_piece_menu.html', true);
@@ -35,3 +35,14 @@ request3.onload = function() {
  target2.appendChild(container3);
 };
 request3.send();
+// CТЕНА
+let container4 = document.createElement('div');
+let request4 = new XMLHttpRequest();
+request4.open('GET', './../page_elements/cap_menu.html', true);
+request4.onload = function() {
+ let target2 = document.getElementById('header2');
+
+ container4.innerHTML = request4.responseText;
+ target2.appendChild(container4);
+};
+request4.send();

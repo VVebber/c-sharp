@@ -10,6 +10,9 @@ body{
 .flex {
     display: flex;
 }
+.inline-flex {
+    display: inline-flex;
+}
 .grid {
     display: grid;
 }
@@ -34,6 +37,9 @@ body{
 .background_black{
     background: rgb(40, 42, 53);
 }
+.background_olive{
+    background: #f8f4d7;
+}
 a {
     text-decoration: none;
 }
@@ -53,11 +59,17 @@ a {
 .background_gray2 {
     background: #9aa3a4;
 }
+.border_gray2px{
+    border: grey 2px dashed;
+}
 .border_black{
     border: 2mm solid rgb(40, 42, 53);
 }
 .border-right{
     border-right: 1.5mm solid  #a80404;
+}
+.border-right_grin{
+    border-right: 1mm solid #04a812;
 }
 .border-end{
     border-block-end: 2mm solid #a80404;
@@ -68,6 +80,7 @@ a {
 .padding-out {
     padding-bottom: 30px;
 }
+
 .padding-out10px {
     padding-bottom: 10px;
 }
@@ -76,6 +89,9 @@ a {
 }
 .padding_top{
     padding-top: 10px;
+}
+.padding5px {
+    padding: 5px;
 }
 .padding10px{
     padding: 10px;
@@ -125,14 +141,23 @@ font-weight: bold;
 .black{
     color:black;
 }
+.grey{
+    color:grey;
+}
 .red{
     color:red;
 }
-.blue{
-    color:dodgerblue;
+.blue1{
+    color: #005aff;
 }
-.green{
+.blue2{
+    color: #77b6ea;
+}
+.green1{
     color:green;
+}
+.green2{
+    color: #83c520;
 }
 
 
@@ -144,15 +169,6 @@ font-weight: bold;
     width: 70%;
     font-size: 30px;
     margin-left:15px ;
-}
-.backgroundOran {
-    background: rgba(197, 170, 123, 0.64);
-}
-.border2 {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    padding: 2px;
-    border: red 2px dotted;
 }
 .Console{
     color:white;
