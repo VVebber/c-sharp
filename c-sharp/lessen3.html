@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <title>C# syntax</title>
+</head>
+<body>
+<div>
+  <!--1--><div class="flex background_black flex_dirction border_black content_center">
+  <header  id="header">
+    <script src="../Javascript/One.js"></script>
+  </header>
+  <!--1--></div>
+  <!--А--><div class="flex">
+  <!--2--><div>
+  <header  class="flex background_gray" id="side_piece">
+    <script src="../Javascript/One.js"></script>
+  </header>
+  <!--2--></div>
+  <!--3--><div  class="lessen block">
+  <div> <!-- Преобразование типов -->
+    <h1> Преобразование типов </h1>
+    <p>Преобразование типов данных - это процесс приведения значения одного типа к другому типу данных. В языке C# преобразование типов данных может быть явным или неявным.</p>
+
+  <div><!--Явное преобразование: Начало-->
+    <h3 style="text-align: start">Явное преобразование </h3>
+    <p>Явное преобразование типов данных (explicit type conversion) в C# используется для приведения значения одного типа к другому типу данных. Явное преобразование выполняется с помощью оператора приведения типа (тип)значение, где тип - тип данных, к которому нужно привести значение, а значение - значение, которое необходимо преобразовать.</p>
+    <p>Например, если мы хотим преобразовать целочисленное значение в число с плавающей точкой, мы можем использовать явное преобразование типов следующим образом:</p>
+    <div class="font_size25xp"><!--Консоль Начало -->
+      <div class="Console inline-block margin_bottom20px" >
+        <div CLASS="Console_Up_Gray">C#</div>
+        <div class="Console_Down_Black"> <p> int numInt = 10; <br>
+          double numDouble = (double)numInt</p></div>
+      </div>
+    </div> <!--Консоль конец -->
+    <p>Здесь мы используем оператор приведения типа (double), чтобы преобразовать значение переменной numInt типа int в значение типа double и присвоить результат переменной numDouble.</p>
+  </div><!--Явное преобразование: Конец -->
+  <div><!--Неявное преобразование: Начало -->
+    <h3>Неявное преобразование</h3>
+    <p>Неявное преобразование типов данных - это автоматическое преобразование значения одного типа данных в значение другого типа данных без явного указания в коде. В C# это происходит, когда тип данных присваивается переменной другого типа данных, который может быть неявно преобразован в этот тип данных.</p>
+    <p>Неявное преобразование типов данных - это автоматическое преобразование значения одного типа данных в значение другого типа данных без явного указания в коде. В C# это происходит, когда тип данных присваивается переменной другого типа данных, который может быть неявно преобразован в этот тип данных.</p>
+    <div class="font_size25xp"><!--Консоль Начало -->
+      <div class="Console inline-block margin_bottom20px" >
+        <div CLASS="Console_Up_Gray">C#</div>
+        <div class="Console_Down_Black"> <p> int x = 5;
+         <br> float y = 2.5f;
+         <br> float result = x + y; // значение x неявно преобразуется в тип float
+          /p></div>
+      </div>
+    </div> <!--Консоль конец -->
+    <p>Все безопасные автоматические преобразования можно описать следующей таблицей:</p>
+    <table class="margin_bottom20px" style="border-collapse: collapse;">
+      <tr >
+        <th class="border_black2px padding10px">Изначальный тип</th>
+        <th class="border_black2px padding10px">Целевой тип</th>
+        <th class="border_black2px padding10px">Пример</th>
+      </tr>
+      <tr>
+        <th class="border_black2px padding10px">byte</td>
+        <th class="border_black2px padding10px">short, ushort, int, uint, long, ulong, float, double, decimal</td>
+        <th class="border_black2px padding10px">byte b = 10; int i = b;</td>
+      </tr>
+      <tr>
+        <th class="border_black2px padding10px">short</td>
+        <th class="border_black2px padding10px">int, long, float, double, decimal</td>
+        <th class="border_black2px padding10px">short s = 123; int i = s;</td>
+      </tr>
+      <tr>
+        <th class="border_black2px padding10px">ushort</td>
+        <th class="border_black2px padding10px">int, uint, long, ulong, float, double, decimal</td>
+        <th class="border_black2px padding10px">ushort us = 456; int i = us;</td>
+      </tr>
+      <tr>
+        <th class="border_black2px padding10px">int</td>
+        <th class="border_black2px padding10px">long, float, double, decimal</td>
+        <th class="border_black2px padding10px">int i = 123456; long l = i;</td>
+      </tr>
+      <tr>
+        <th class="border_black2px padding10px">uint</td>
+        <th class="border_black2px padding10px">long, ulong, float, double, decimal</td>
+        <th class="border_black2px padding10px">uint ui = 123456; long l = ui;</td>
+      </tr>
+      <tr>
+        <th class="border_black2px padding10px">long</td>
+        <th class="border_black2px padding10px">float, double, decimal</td>
+        <th class="border_black2px padding10px">long l = 123456789; float f = l;</td>
+      </tr>
+      <tr>
+        <th class="border_black2px padding10px">ulong</td>
+        <th class="border_black2px padding10px">float, double, decimal</td>
+        <th class="border_black2px padding10px">ulong ul = 123456789; float f = ul;</td>
+      </tr>
+      <tr>
+        <th class="border_black2px padding10px">char</td>
+        <th class="border_black2px padding10px">ushort, int, uint, long, ulong, float, double, decimal</td>
+        <th class="border_black2px padding10px">char c = 'A'; int i = c;</td>
+      </tr>
+      <tr>
+        <th class="border_black2px padding10px">float</td>
+        <th class="border_black2px padding10px">double</td>
+        <th class="border_black2px padding10px">float f = 3.141f; double d = f;</td>
+      </tr>
+    </table>
+  </div><!-- Неявное преобразование: Конец -->
+  </div><!-- Преобразование типов -->
+  <div style="margin-left: 30px"> <!--Задание Начало -->
+    <h3>Задачи</h3>
+    <hr> <!-- ЛИНИЯ -->
+    <P class="font_size25xp">Что произойдет, если попытаться присвоить переменной типа int значение 2.5?</P>
+    <details class="border_black2px font_size25xp padding10px">
+      <summary style="list-style: none;">Ответ</summary>
+      <p class="font_size25xp">Произойдет ошибка компиляции, так как нельзя присвоить переменной типа int вещественное значение без явного преобразования типов</p>
+    </details >
+    <hr> <!-- ЛИНИЯ -->
+    <p class="font_size25xp">Какое значение будет иметь переменная типа int, если мы присвоим ей результат деления двух чисел типа double?</p>
+    <details >
+      <summary class="border_black2px font_size25xp padding10px" style="list-style: none;" >Ответ</summary>
+      <p class="font_size25xp">Если мы не выполним явное преобразование типов, то значение будет округлено в меньшую сторону до ближайшего целого числа. Для сохранения дробной части необходимо выполнить явное преобразование типов данных.</p>
+    </details>
+    <hr> <!-- ЛИНИЯ -->
+    <p class="font_size25xp">Программа, которая преобразует целое число в число с плавающей запятой и выводит результат на экран:</p>
+    <details class="border_black2px font_size25xp padding10px margin_bottom20px">
+      <summary style="list-style: none;">Ответ</summary>
+      <div  class="Console inline-block"><!--начало консоли-->
+        <div class="Console_Up_Gray ">   C#   </div>
+        <div class="Console_Down_Black">   <p class="font_size25xp" style="white-space: pre">
+using System;<br>
+<br>
+class Program {<br>
+    static void Main(string[] args) {<br>
+        int num = 8;<br>
+        float floatNum = (float)num;<br>
+        Console.WriteLine("Число с плавающей запятой: " + floatNum);<br>
+    }<br>
+}        </p></div>
+      </div>
+    </details>
+    </div> <!--Задние конец -->
+  <!--3--></div>
+  <!--А--></div>
+</div>
+<div style="height: 100px;     background: rgb(40, 42, 53); clear: both;"></div>
+</body>
+</html>
