@@ -114,8 +114,17 @@ a {
 .margin_bottom20px{
     margin-bottom: 20px ;
 }
+.font_family_none{
+    font-family: "";
+}
 .font_size20xp{
     font-size: 20px;
+}
+.font_size21xp{
+    font-size: 21px;
+}
+.font_size22xp{
+    font-size: 22px;
 }
 .font_size23xp{
     font-size: 23px;
