@@ -13,7 +13,7 @@ function requestHTML(url, targetId) {
 // Пример использования функции
 const requests = [
   fetch('./../page_elements/cap.html').then(res => res.text()),
-  fetch('./../page_elements/side_piece.html').then(res => res.text()),
+  fetch('./../page_elements/side_piece_C-sharp.html').then(res => res.text()),
   fetch('./../page_elements/side_piece_menu.html').then(res => res.text()),
   fetch('./../page_elements/cap_menu.html').then(res => res.text())
 ];
@@ -42,3 +42,14 @@ Promise.all(requests)
       capMenuEl?.appendChild(capMenuContainer);
     })
     .catch(error => console.error(error));
+
+let menuButton = document.querySelector('.menu-button');
+let menuList = document.querySelector('.menu-list');
+
+menuButton.addEventListener('click', function() {
+    if (menuList.style.display === 'none') {
+        menuList.style.display = 'block';
+    } else {
+        menuList.style.display = 'none';
+    }
+});
