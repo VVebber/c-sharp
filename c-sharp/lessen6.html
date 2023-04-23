@@ -17,7 +17,135 @@
       </header>
     </div>
     <div class="lessen block" style="">
-      g
+      <h1>Конструкция switch-case</h1>
+      <p>Конструкция switch-case является одним из способов управления выполнением программы в языке C#. Эта конструкция позволяет выбирать действия в зависимости от значения переменной или выражения. В данной лекции мы рассмотрим, как использовать конструкцию switch-case в C# и как она может быть полезна в разработке программ.      </p>
+      <p>Синтаксис конструкции switch-case в C# выглядит следующим образом:</p>
+        <div class="inline-flex border_gray2px font_size20xp background_olive ">
+          <div class="border-right_grin padding_left padding_right grey">
+            <p id="integer12">1</p>
+          </div>
+          <div class="font_size20xp">
+            <p class="white_space white padding_right"><code class="language-csharp">switch (expression) {
+    case value1:
+      // действия, которые нужно выполнить, если expression равно value1
+      break;
+    case value2:
+      // действия, которые нужно выполнить, если expression равно value2
+      break;
+    ...
+    default:
+      // действия, которые нужно выполнить, если expression не равно ни одному из значений case
+      break;
+  }</code></p>
+          </div>
+        </div>
+      <p>Здесь expression - это выражение, для которого мы хотим выполнить проверку, `value1`, `value2`, ... - это значения, с которыми мы хотим сравнить `expression`, и `default` - это ветка, которая будет выполнена, если expression не равно ни одному из значений case. </p>
+      <p>Давайте рассмотрим пример использования конструкции switch-case:</p>
+      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer31">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p class="white_space white padding_right"><code class="language-csharp">int dayOfWeek = 3;
+string dayName;
+
+switch (dayOfWeek) {
+  case 1:
+    dayName = "Понедельник";
+    break;
+  case 2:
+    dayName = "Вторник";
+    break;
+  case 3:
+    dayName = "Среда";
+    break;
+  case 4:
+    dayName = "Четверг";
+    break;
+  case 5:
+    dayName = "Пятница";
+    break;
+  case 6:
+    dayName = "Суббота";
+    break;
+  case 7:
+    dayName = "Воскресенье";
+    break;
+  default:
+    dayName = "Неизвестный день недели";
+    break;
+}
+
+Console.WriteLine("День недели: " + dayName);</code></p>
+        </div>
+      </div>
+      <p>В этом примере мы определяем значение `dayOfWeek` равным 3, затем используем конструкцию switch-case, чтобы определить, какой день недели соответствует этому значению. В данном случае мы получим на выходе строку "Среда".      </p>
+      <p>Конструкция switch-case также может быть использована с другими типами данных, например, с символьными строками. Например:      </p>
+
+
+      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer19">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p class="white_space white padding_right"><code class="language-csharp">string color = "красный";
+string message;
+            
+switch (color) {
+  case "красный":
+    message = "Сигнал светофора - стой!";
+    break;
+  case "желтый":
+    message = "Сигнал светофора - жди!";
+    break;
+  case "зеленый":
+    message = "Сигнал светофора - проезд разрешен!";
+    break;
+  default:
+    message = "Неизвестный ц  вет светофора";
+    break;
+  }
+
+Console.WriteLine(message);</code></p>
+        </div>
+      </div>
+      <p>В этом примере мы определяем значение `color` равным "красный", затем используем конструкцию switch-case, чтобы определить, какое сообщение должно быть выведено на экран в зависимости от цвета светофора. В данном случае мы получим на выходе строку "Сигнал светофора - стой!".</p>
+      <p>Также конструкция switch-case может содержать несколько веток с одинаковыми значениями, например:</p>
+      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer18">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p class="white_space white padding_right"><code class="language-csharp">int number = 2;
+
+switch (number)
+{
+  case 1:
+  case 2:
+  case 3:
+    Console.WriteLine("Число от 1 до 3");
+    break;
+  case 4:
+  case 5:
+  case 6:
+    Console.WriteLine("Число от 4 до 6");
+    break;
+  default:
+    Console.WriteLine("Число вне диапазона от 1 до 6");
+    break;
+}</code></p>
+        </div>
+      </div>
+      <p>B этом примере мы определяем значение `number` равным 2, затем используем конструкцию switch-case, чтобы определить, в каком диапазоне находится это число. В данном случае мы получим на выходе строку "Число от 1 до 3".      </p>
+      <p>Важно заметить, что в каждой ветке в конце стоит оператор `break`, который прерывает выполнение конструкции switch-case и переходит к следующей строке кода за конструкцией. Если оператор `break` не будет указан, то выполнение продолжится в следующей ветке, что может привести к неправильному результату.      </p>
+      <p>Также в конструкции switch-case можно использовать операторы `return` и `throw`, которые прерывают выполнение текущего метода и возвращают результат или выбрасывают исключение соответственно.      </p>
+      <p>Конструкция switch-case может быть полезной в различных задачах, где необходимо выбирать различные варианты выполнения в зависимости от значения переменной или выражения. Например, это может быть использовано в обработке событий пользовательского интерфейса, валидации входных данных, обработке ошибок и многих других случаях.      </p>
+
+
+
+
+
+
     </div>
   </div>
 </div>
