@@ -5,6 +5,7 @@ body{
     min-height: 100vh;
     margin:0px;
     height: 100vh;
+    z-index: 1 ;
 }
 .flex {
     display: flex;
@@ -181,6 +182,15 @@ font-weight: bold;
     border: #2b2d30 2px solid;
     border-bottom-right-radius: 10px;
 }
+.les2{
+    overflow-y: scroll; 
+    min-width: 80%;
+    max-width: 80%;
+}
+.les3{
+    overflow-x: scroll; 
+    max-height: 350px;
+}
 .lessen{
     max-width: 70%;
     font-size: 30px;
@@ -238,3 +248,17 @@ font-weight: bold;
     color: #999;
     font-style: italic;
 }
+.my-element {
+    position: fixed;
+    z-index: 1;
+  }
+  .sticky-element {
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+  }
+  .sticky-element2 {
+    position: sticky;
+    top: 67px; 
+     z-index: 0;
+  }

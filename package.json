@@ -1,5 +1,1 @@
-{
-  "dependencies": {
-    "@clerk/clerk-js": "^4.32.6"
-  }
-}
+{}

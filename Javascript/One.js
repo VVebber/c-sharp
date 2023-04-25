@@ -1,12 +1,15 @@
 function requestHTML(url, targetId) {
   const container = document.createElement('div');
   const xhr = new XMLHttpRequest();
+
   xhr.open('GET', url, true);
   xhr.onload = function() {
     container.innerHTML = xhr.responseText;
     const target = document.getElementById(targetId);
+    
     target?.appendChild(container);
   };
+
   xhr.send();
 }
 
