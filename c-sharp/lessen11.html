@@ -17,7 +17,78 @@
       </header>
     </div>
     <div class="lessen block" style="">
-      g
+      <h2>Основные понятия ООП: классы, объекты, инкапсуляция, наследование, полиморфизм</h2>
+      <h3>Конструкторы и деструкторы      </h3>
+      <p>Конструктор - это специальный метод, который вызывается при создании объекта класса. Он служит для инициализации объекта начальными значениями полей. Название конструктора всегда совпадает с названием класса. В C++ может быть несколько конструкторов у одного класса, каждый из которых может принимать различное число параметров или параметры разного типа.      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+            <p id="integer23">1</p>
+        </div>
+        <div class="font_size20xp">
+<p  class="white_space white padding_right"><code class="language-csharp">class Rectangle {
+  private:
+    int width, height;
+  public:
+    // конструкторы
+    Rectangle () { width = 0; height = 0; }
+    Rectangle (int,int);
+    // методы
+    int area() { return width*height; }
+};
+
+Rectangle::Rectangle (int a, int b) {
+  width = a;
+  height = b;
+}
+
+int main () {
+  Rectangle rect1;
+  Rectangle rect2 (3,4);
+  cout << "area rect1: " << rect1.area() << endl;
+  cout << "area rect2: " << rect2.area() << endl;
+  return 0;
+}
+</code></p>  
+        </div>
+      </div>  
+      <p>Деструктор - это метод, который вызывается при удалении объекта класса. Он служит для освобождения ресурсов, выделенных для объекта, и выполнения других действий, необходимых при уничтожении объекта.      </p>
+      
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+            <p id="integer19">1</p>
+        </div>
+        <div class="font_size20xp">
+<p  class="white_space white padding_right"><code class="language-csharp">class Rectangle {
+  private:
+    int width, height;
+  public:
+    void set_values (int,int);
+    int area() { return width*height; }
+};
+
+void Rectangle::set_values (int x, int y) {
+  width = x;
+  height = y;
+}
+
+int main () {
+  Rectangle rect;
+  rect.set_values (3,4);
+  cout << "area: " << rect.area() << endl;
+  return 0;
+}
+</code></p>  
+        </div>
+      </div>  
+
+
+
+
+
+
+
+
+
     </div>
   </div>
 </div>

@@ -7,17 +7,16 @@
 </head>
 <body>
 <div>
-    <div class="flex background_black flex_dirction border_black content_center">
-        <header  id="header">
-            <script src="../Javascript/One.js"></script>
-        </header>
+  <div class="flex background_black flex_dirction border_black content_center sticky-element">
+    <header  id="header"></header>
+  </div>
+
+  <div class="flex">
+    <div>
+      <header class="flex background_gray les3 left_m sticky-element2" id="side_piece"></header>
     </div>
-    <div class="flex">
-        <div>
-            <header class="flex background_gray left_m" id="side_piece">
-            </header>
-        </div>
-        <div class="lessen block" style="">
+
+    <div class="lessen block"`>
             <h1>Типы данных в C#</h1>
             <p>В языке C# есть несколько типов данных, которые мы можем использовать в нашем коде. Вот некоторые из них:</p>
         <OL>
@@ -47,7 +46,7 @@
             <p>Переменные в C# - это именованные области памяти, которые мы можем использовать для хранения значений. Каждая переменная имеет свой тип данных и имя.</p>
             <p>Для создания переменной в C# мы указываем ее тип данных, а затем имя переменной. Например, если мы хотим создать целочисленную переменную с именем `myNumber`, мы можем написать следующий код:</p>
 
-            <div class="inline-flex border_gray2px font_size20xp background_olive">
+            <div class="inline-flex border_gray2px les2  font_size20xp background_olive">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p>1</p>
                 </div>
@@ -59,7 +58,7 @@
             <p>Здесь мы создаем переменную `myNumber` типа `int`, которая будет использоваться для хранения целочисленных значений.</p>
             <p>Чтобы присвоить значение переменной, мы используем оператор присваивания `=`. Например, чтобы присвоить значение 42 переменной `myNumber`, мы можем написать следующий код:</p>
 
-            <div class="inline-flex border_gray2px font_size20xp background_olive">
+            <div class="inline-flex border_gray2px les2 font_size20xp background_olive">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p>1</p>
                 </div>
@@ -70,7 +69,7 @@
             <p>При создании переменной важно учитывать ее область видимости. Область видимости переменной - это часть кода, где переменная доступна. В C# есть три типа области видимости:</p>
             <ol>
                 <li>Локальная область видимости - переменная доступна только в блоке кода, в котором она была объявлена. Например:</li>
-                <div class="inline-flex border_gray2px font_size20xp background_olive ">
+                <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                     <div class="border-right_grin padding_left padding_right grey">
                         <p id="integer5">1</p>
                     </div>
@@ -83,7 +82,7 @@
                     </div>
                 </div>
                 <li>Область видимости класса - переменная доступна внутри всего класса. Например:</li>
-                <div class="inline-flex border_gray2px font_size20xp background_olive ">
+                <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                     <div class="border-right_grin padding_left padding_right grey">
                         <p id="integer5_2">1</p>
                     </div>
@@ -96,7 +95,7 @@
                     </div>
                 </div>
                 <li>Область видимости пространства имен - переменная доступна внутри всего пространства имен. Например:</li>
-                <div class="inline-flex border_gray2px font_size20xp background_olive ">
+                <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                     <div class="border-right_grin padding_left padding_right grey">
                         <p id="integer5_3">1</p>
                     </div>
@@ -111,7 +110,7 @@
             </ol>
             <h4>Примеры</h4>
             <p>Давайте посмотрим на несколько примеров использования переменных и типов данных в C#:</p>
-            <div class="inline-flex border_gray2px font_size20xp background_olive ">
+            <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p id="integer5_4">1</p>
                 </div>
@@ -126,7 +125,7 @@ string myString = "Hello, world!";</code></p>
             <p>Здесь мы создаем переменные различных типов данных и присваиваем им значения. Обратите внимание, что мы добавляем суффиксы `f` и `L` к числам с плавающей запятой и длинным целым числам соответственно, чтобы указать их тип.</p>
             <p>Мы также можем использовать операции над переменными. Например:</p>
 
-            <div class="inline-flex border_gray2px font_size20xp background_olive ">
+            <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p id="integer7">1</p>
                 </div>
@@ -206,7 +205,7 @@ int k = y % x; // здесь k будет равно 0.  Здесь остато
             <p>Префиксная форма инкремента/декремента сначала изменяет значение переменной, а затем возвращает ее измененное значение. Постфиксная форма сначала возвращает значение переменной, а затем изменяет его.</p>
             <p>Рассмотрим примеры:</p>
 
-            <div class="inline-flex border_gray2px font_size20xp background_olive ">
+            <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p id="integer3">1</p>
                 </div>
@@ -217,7 +216,7 @@ int b = a++; // b=5, a=6</code></p>
                 </div>
             </div>
             <p>В этом случае значение переменной a увеличивается на 1 после того, как она была присвоена переменной b. Поэтому в результате выполнения этого кода значение b равно 5, а значение a равно 6.</p>
-            <div class="inline-flex border_gray2px font_size20xp background_olive ">
+            <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p id="integer3_2">1</p>
                 </div>
@@ -229,7 +228,7 @@ int b = a--; // b=5, a=4</code></p>
             </div>
             <p>В этом случае значение переменной a уменьшается на 1 после того, как она была присвоена переменной b. Поэтому в результате выполнения этого кода значение b равно 5, а значение a равно 4.</p>
 
-            <div class="inline-flex border_gray2px font_size20xp background_olive ">
+            <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p id="integer3_3">1</p>
                 </div>
@@ -240,7 +239,7 @@ int b = ++a; // b=6, a=6</code></p>
                 </div>
             </div>
             <p>В этом случае значение переменной a увеличивается на 1 до того, как она была присвоена переменной b. Поэтому в результате выполнения этого кода значение b равно 6, а значение a также равно 6.</p>
-            <div class="inline-flex border_gray2px font_size20xp background_olive ">
+            <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p id="integer3_4">1</p>
                 </div>
@@ -255,7 +254,7 @@ int b = --a; // b=4, a=4</code></p>
             <h3>Константы</h3>
             <p>Константы представляют собой данные, которые не могут быть изменены во время выполнения программы. Давайте более подробно рассмотрим, что это такое и как использовать константы в C#.</p>
             <p>В C# константы объявляются с помощью ключевого слова const. Синтаксис объявления константы выглядит следующим образом:</p>
-            <div class="inline-flex border_gray2px font_size20xp background_olive ">
+            <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p>1</p>
                 </div>
@@ -269,7 +268,7 @@ int b = --a; // b=4, a=4</code></p>
                 <li>`"значение"` - значение константы.</li>
             </ol>
             <p>Для примера, объявим константу для хранения значения числа Пи:</p>
-            <div class="inline-flex border_gray2px font_size20xp background_olive ">
+            <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
                 <div class="border-right_grin padding_left padding_right grey">
                     <p>1</p>
                 </div>
@@ -291,6 +290,7 @@ int b = --a; // b=4, a=4</code></p>
         </div>
     </div>
 </div>
+<script src="../Javascript/One.js"></script>
 <script src="../Javascript/console.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-csharp.min.js"></script>

@@ -16,9 +16,233 @@
       <header class="flex background_gray left_m" id="side_piece">
       </header>
     </div>
-    <div class="lessen block" style="">
-      g
+    <div class="lessen block"`>
+      <h1>функции и процедуры</h1>
+      <p>Концепция функций в C# похожа на другие языки программирования, такие как C++, Java и Python. Функция - это фрагмент кода, который выполняет определенную операцию и может быть вызван из другой части программы. Они очень полезны, когда требуется повторное использование кода, когда необходимо выполнить одну и ту же операцию несколько раз в разных местах программы.      </p>
+      <p>Синтаксис объявления функции:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer4">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">[модификаторы доступа] [возвращаемый тип] ИмяФункции([параметры])
+{
+    // тело функции
+}</code></p>  
+        </div>
+      </div>  
+      <p>Модификаторы доступа определяют область видимости функции в программе. Наиболее часто используемые модификаторы доступа в C#:      </p>
+      <ul>
+        <li>public: функция может быть вызвана из любой части программы.        </li>
+        <li>private: функция может быть вызвана только из той же класса, в котором она объявлена.        </li>
+        <li>protected: функция может быть вызвана из того же класса или из его производных классов.        </li>
+        <li>internal: функция может быть вызвана из любого места в текущей сборке.        </li>
+      </ul>
+      <p>Возвращаемый тип определяет тип данных, который функция вернет при своем вызове. Если функция не должна возвращать значение, то ее возвращаемый тип должен быть void.      </p>
+      <p>Параметры - это значения, которые передаются функции при ее вызове. Они могут быть определены как значения типов данных, таких как int, float, string, и т.д., или же объектов классов.      </p>
+      <p>Пример объявления функции, которая принимает два целочисленных параметра и возвращает их сумму:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer5 ">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">public int Sum(int a, int b)
+{
+    int result = a + b;
+    return result;
+}</code></p>  
+        </div>
+      </div>  
+      <p>В этом примере модификатор доступа public означает, что функция Sum может быть вызвана из любого места программы. Возвращаемый тип - int, что означает, что функция вернет целочисленное значение. Параметры a и b имеют тип int и будут использоваться в теле функции.`      </p>
+      <p>Пример вызова этой функции:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer4_3">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int x = 10;
+int y = 20;
+int result = Sum(x, y);
+Console.WriteLine(result); // Выведет 30</code></p>  
+        </div>
+      </div>  
+      <p>В этом примере мы объявляем две переменные, x и y, которые будут переданы в качестве аргументов функции Sum. Результат функции сохраняется в переменной result, которая затем выводится на консоль.      </p>
+      
+      
+
+      
+      <p>Функции могут быть перегружены, то есть функции с одним и тем же именем могут иметь различные списки параметров. Это позволяет использовать одно и то же имя функции для разных операций      </p>
+      <p>Например, допустим, мы хотим иметь функцию, которая складывает два целых числа, а также функцию, которая складывает два вещественных числа. Мы можем определить две функции с одним и тем же именем, но с разными параметрами:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer9">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int Add(int a, int b)
+{
+    return a + b;
+}
+
+double Add(double a, double b)
+{
+    return a + b;
+}</code></p>  
+        </div>
+      </div>  
+      <p>Теперь мы можем использовать функцию `Add` для складывания целых и вещественных чисел:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer2">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int result1 = Add(2, 3);         // результат равен 5 (вызывается первая версия функции Add)
+double result2 = Add(2.5, 3.7);  // результат равен 6.2 (вызывается вторая версия функции Add)</code></p>  
+        </div>
+      </div>  
+      <p>Когда мы вызываем функцию `Add` с двумя целыми числами, вызывается первая версия функции, которая возвращает результат в виде целого числа. Когда мы вызываем функцию `Add` с двумя вещественными числами, вызывается вторая версия функции, которая возвращает результат в виде вещественного числа.      </p>
+      <p>Перегрузка функций также может использоваться для упрощения кода. Рассмотрим следующий пример:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer9_2">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int Multiply(int a, int b)
+{
+    return a * b;
+}
+
+int Multiply(int a, int b, int c)
+{
+    return a * b * c;
+}</code></p>  
+        </div>
+      </div>  
+      <p>Здесь мы определили две функции `Multiply`, которые умножают два или три целых числа. Теперь мы можем использовать эти функции в зависимости от количества чисел, которые мы хотим умножить:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer2_3">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int result1 = Multiply(2, 3);           // результат равен 6 (вызывается первая версия функции Multiply)
+int result2 = Multiply(2, 3, 4);        // результат равен 24 (вызывается вторая версия функции Multiply)</code></p>  
+        </div>
+      </div>  
+      <p>Кроме того, в C# есть возможность определить функции с параметрами по умолчанию. Это означает, что если мы не передаем значения для этих параметров при вызове функции, то они будут автоматически инициализированы значениями по умолчанию.      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer2_3">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int Add(int a, int b, int c = 0)
+{
+    return a + b + c;
+}</code></p>  
+        </div>
+      </div>  
+      <p>Здесь мы определили функцию  `Add`, которая принимает два целочисленных аргумента и возвращает их сумму. Это пример простой функции, которая выполняет одну задачу. Но что, если нам нужно написать функцию, которая может выполнять разные задачи в зависимости от переданных аргументов? В этом случае мы можем использовать перегрузку функций.      </p>
+      <p>Перегрузка функций - это возможность определять несколько функций с одним и тем же именем, но с разными списками аргументов. При вызове такой функции, компилятор будет выбирать наиболее подходящую функцию на основе типов и количества переданных аргументов.      </p>
+      <p>Рассмотрим пример перегрузки функций:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer11">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int Add(int a, int b) {
+    return a + b;
+}
+
+double Add(double a, double b) {
+    return a + b;
+}
+
+int Add(int a, int b, int c) {
+    return a + b + c;
+}</code></p>  
+        </div>
+      </div>  
+      <p>Здесь мы определили три функции с именем `Add`, каждая из которых принимает разное количество или тип аргументов. Если мы вызываем функцию `Add` с двумя целочисленными аргументами, будет вызвана первая функция `Add(int a, int b)`. Если мы вызываем функцию `Add` с двумя аргументами типа `double`, будет вызвана вторая функция `Add(double a, double b)`. А если мы вызываем функцию `Add` с тремя целочисленными аргументами, будет вызвана третья функция `Add(int a, int b, int c)`.      </p>
+      <p>Кроме того, в C# есть возможность указать параметры функции со значением по умолчанию. Это позволяет вызывать функцию без указания всех параметров, если у них есть значения по умолчанию. Рассмотрим пример:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer3">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int Add(int a, int b = 0, int c = 0) {
+    return a + b + c;
+}</code></p>  
+        </div>
+      </div>  
+      <p>Здесь мы определили функцию `Add`, которая принимает три аргумента, но у второго и третьего параметра есть значения по умолчанию, равные нулю. Если мы вызываем функцию `Add` с одним аргументом, будет вычислена сумма этого аргумента и двух нулей. Если мы вызываем функцию `Add` с двумя аргументами, будет вычислена сумма этих аргументов и одного нуля. А если мы вызываем функцию Add с тремя аргументами, будет вычислена сумма всех трех аргументов.      </p>
+      <h3>Рекурсия</h3>
+      <p>Рекурсия - это процесс, в котором функция вызывает сама себя в своем теле. Рекурсивные функции могут использоваться во многих задачах, таких как обход деревьев и списков, вычисление факториала числа и т.д.      </p>
+      <p>Для того, чтобы функция была рекурсивной, она должна иметь базовый случай и случай рекурсии. Базовый случай - это крайний случай, когда функция больше не вызывает саму себя и возвращает результат. Случай рекурсии - это случай, когда функция вызывает сама себя с новыми аргументами, приближаясь к базовому случаю.      </p>
+      <p>Рассмотрим пример рекурсивной функции для вычисления факториала числа:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer11_2">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">public static int Factorial(int n)
+{
+    if (n == 0)
+    {
+        return 1; // базовый случай
+    }
+    else
+    {
+        return n * Factorial(n - 1); // случай рекурсии
+    }
+}</code></p>  
+        </div>
+      </div>  
+      <p>В этом примере функция `Factorial` вызывает саму себя с аргументом `n - 1` до тех пор, пока не достигнет базового случая, когда `n` равно  0. При каждом вызове функция уменьшает значение `n` на 1 и умножает результат на `n`, пока `n` не станет равным 0.       </p>
+      <p>Пример использования функции `Factorial`:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer2_4">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int result = Factorial(5); // вычисляем факториал числа 5
+Console.WriteLine(result); // выводим результат (120)</code></p>  
+        </div>
+      </div>  
+      <p>Еще один пример рекурсивной функции - функция для вычисления чисел Фибоначчи:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer11_3">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">public static int Fibonacci(int n)
+{
+    if (n == 0 || n == 1)
+    {
+        return n; // базовые случаи
+    }
+    else
+    {
+        return Fibonacci(n - 1) + Fibonacci(n - 2); // случай рекурсии
+    }
+}</code></p>  
+        </div>
+      </div>  
+      <p>Эта функция вызывает саму себя с аргументами `n - 1` и `n - 2` до тех пор, пока не достигнет базового случая, когда `n` равно 0 или 1. При каждом вызове функция возвращает сумму двух предыдущих чисел Фибоначчи.      </p>
+      <p>Пример использования функции `Fibonacci`:      </p>
+      <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+        <div class="border-right_grin padding_left padding_right grey">
+          <p id="integer2_7">1</p>
+        </div>
+        <div class="font_size20xp">
+          <p  class="white_space white padding_right"><code class="language-csharp">int result = Fibonacci(6); // вычисляем шестое число Фибоначчи
+Console.WriteLine(result); // выводим результат (8)</code></p>  
+        </div>
+        </div>
+        <p>Использование рекурсии может привести к переполнению стека, особенно при работе с большими значениями аргументов или при неправильной рекурсивной структуре функции. Но в правильно построенных функциях рекурсия может быть очень полезной и удобной.</p>        
+
+
+
+
     </div>
+  </div>
   </div>
 </div>
 <script src="../Javascript/One.js"></script>

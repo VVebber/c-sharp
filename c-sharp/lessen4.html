@@ -7,20 +7,20 @@
 </head>
 <body>
 <div>
-  <div class="flex background_black flex_dirction border_black content_center">
-    <header  id="header">
-    </header>
+  <div class="flex background_black flex_dirction border_black content_center sticky-element">
+    <header  id="header"></header>
   </div>
+
   <div class="flex">
     <div>
-      <header class="flex background_gray left_m" id="side_piece">
-      </header>
+      <header class="flex background_gray les3 left_m sticky-element2" id="side_piece"></header>
     </div>
-    <div class="lessen block" style="">
+
+    <div class="lessen block"`>
       <p>Ввод/вывод данных (I/O) - одна из наиболее важных операций при написании программ на любом языке программирования, включая C#. I/O позволяет программе получать информацию от пользователя или из внешних источников, а также выводить результаты работы программы на экран или в файлы. В этой лекции мы рассмотрим основы ввода/вывода данных в C#.</p>
       <h3>Вывод данных</h3>
       <p>Для вывода данных на экран в C# используется метод Console.WriteLine(). Этот метод выводит переданные ему аргументы на консоль, а затем переносит курсор на новую строку. Вот простейший пример:</p>
-      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+      <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
         <div class="border-right_grin padding_left padding_right grey">
           <p>1</p>
         </div>
@@ -30,7 +30,7 @@
       </div>
       <p>Этот код выведет на экран строку "Hello, World!".</p>
       <p>Метод Console.Write() похож на Console.WriteLine(), но не переносит курсор на новую строку. Вот пример:</p>
-      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+      <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
         <div class="border-right_grin padding_left padding_right grey">
           <p>1</p>
         </div>
@@ -40,7 +40,7 @@
       </div>
       <p>Этот код выведет на экран строку "Enter your name: " и остановится, ожидая ввода данных.</p>
       <p>Если вам нужно вывести данные в формате, отличном от строки, можно использовать метод Console.WriteFormat(). Этот метод работает так же, как и Console.WriteLine(), но принимает дополнительный аргумент - строку формата. Вот пример:</p>
-      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+      <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
         <div class="border-right_grin padding_left padding_right grey">
           <p>1</p>
         </div>
@@ -53,7 +53,7 @@ Console.WriteFormat("My name is {0} and I'm {1} years old.", name, age);</code><
       <p>Этот код выведет на экран строку "My name is John and I'm 30 years old.".</p>
       <h3> Ввод данных</h3>
       <p>Для ввода данных с консоли в C# используется метод Console.ReadLine(). Этот метод ожидает ввода данных от пользователя, затем считывает введенную строку и возвращает ее как результат. Вот пример:</p>
-      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+      <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
         <div class="border-right_grin padding_left padding_right grey">
           <p id="integer3">1</p>
         </div>
@@ -65,7 +65,7 @@ Console.WriteLine("Hello, {0}!", name);</code></p>
       </div>
       <p>Этот код запросит у пользователя его имя, затем выведет на экран строку "Hello, {имя}!".</p>
       <p>Если вам нужно считать значение, отличное от строки, вы можете воспользоваться методом Parse() для преобразования введенной строки в нужный тип данных. Например:</p>
-      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+      <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
         <div class="border-right_grin padding_left padding_right grey">
           <p id="integer3_2">1</p>
         </div>
@@ -79,7 +79,7 @@ Console.WriteLine("You are {0} years old.", age);</code></p>
       <h3>Файловый ввод/вывод</h3>
       <p>В C# также есть возможность работать с файлами для ввода/вывода данных. Для работы с файлами необходимо использовать классы System.IO.File и System.IO.StreamReader/StreamWriter. Вот примеры:</p>
       <p>Чтение данных из файла</p>
-      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+      <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
         <div class="border-right_grin padding_left padding_right grey">
           <p id="integer13">1</p>
         </div>
@@ -101,7 +101,7 @@ reader.Close();</code></p>
       </div>
       <p>Этот код открывает файл "input.txt" для чтения, считывает данные построчно и выводит их на экран. После окончания чтения файл закрывается.</p>
       <p>Для записи данных в файл используется класс StreamWriter. Вот пример:</p>
-      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+      <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
         <div class="border-right_grin padding_left padding_right grey">
           <p id="integer10">1</p>
         </div>
@@ -122,7 +122,7 @@ writer.Close();</code></p>
       <h3>Обработка ошибок ввода/вывода</h3>
       <p>При работе с вводом/выводом данных могут возникать ошибки, такие как отсутствие файла или некорректный формат данных. Для обработки ошибок можно использовать блок try-catch. Вот пример:</p>
 
-      <div class="inline-flex border_gray2px font_size20xp background_olive ">
+      <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
         <div class="border-right_grin padding_left padding_right grey">
           <p id="integer20">1</p>
         </div>

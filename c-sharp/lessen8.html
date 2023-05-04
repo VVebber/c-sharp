@@ -23,7 +23,7 @@
         <h3>Создание одномерного массива</h3>
         <p>Одномерный массив можно создать с помощью оператора `new`, указав тип элементов массива и его размер:        </p>
         
-        <div class="inline-flex border_gray2px font_size20xp background_olive ">
+        <div class="inline-flex border_gray2px les2 font_size20xp background_olive ">
           <div class="border-right_grin padding_left padding_right grey">
             <p id="">1</p>
           </div>
@@ -221,45 +221,78 @@ numbers.Add(1); // добавляем элемент в список
 numbers.Add(2);</code></p>  
           </div>
           </div>
-          <h3>Доступ к элементам неограниченных массивов</h3>
-          <p>Доступ к элементам `List<T>` осуществляется также, как и к элементам массива, с помощью индексации:          </p>
-            <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
-              <div class="border-right_grin padding_left padding_right grey">
-                <p id="integer4_4">1</p>
-              </div>
-              <div class="font_size20xp">
-                <p  class="white_space white padding_right"><code class="language-csharp">List<int> numbers = new List<int>();
-numbers.Add(1);
-numbers.Add(2);
-int secondElement = numbers[1]; // получаем второй элемент списка, который равен 2</code></p>  
+          <h3>Динамический массив</h3>
+          <p>Массивы являются упорядоченными коллекциями элементов фиксированной длины, которые хранятся в памяти последовательно. Их размер не может изменяться после создания, и в них можно хранить только элементы одного типа данных. Доступ к элементам массива осуществляется по индексу, который может быть любым целым числом от 0 до длины массива минус один. Например, следующий код создает массив целых чисел длиной 3:          </p>
+          <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+            <div class="border-right_grin padding_left padding_right grey">
+              <p id="integer">1</p>
             </div>
+            <div class="font_size20xp">
+              <p  class="white_space white padding_right"><code class="language-csharp">int[] numbers = new int[3];              </code></p>  
             </div>
-            <h3>Изменение элементов неограниченных массивов            </h3>
-            <p>Элементы `List<T>` также можно изменять, присваивая новые значения по индексу:            </p>
-              <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
-                <div class="border-right_grin padding_left padding_right grey">
-                  <p id="integer4_5">1</p>
-                </div>
-                <div class="font_size20xp">
-                  <p  class="white_space white padding_right"><code class="language-csharp">List<int> numbers = new List<int>();
-numbers.Add(1);
-numbers.Add(2);
-int secondElement = numbers[1]; // получаем второй элемент списка, который равен 2</code></p>  
-              </div>
-              </div>
-              <h3>Примеры использования неограниченных массивов</h3>
-              <p>`List <T>` может быть использован для хранения любых типов данных, и он удобен в тех случаях, когда нужно добавлять или удалять элементы динамически. Например, можно использовать `List<string>` для хранения списка имен пользователей:              </p>
-                <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
-                  <div class="border-right_grin padding_left padding_right grey">
-                    <p id="integer4_6">1</p>
-                  </div>
-                  <div class="font_size20xp">
-                    <p  class="white_space white padding_right"><code class="language-csharp">List<string> names = new List<string>();
-names.Add("John");
-names.Add("Jane");
-names.Add("Bob");</code></p>  
-                </div>
-                </div>
+          </div>
+          <p>Элементы массива можно задавать при его создании или же после создания, используя индекс:          </p>
+          <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+            <div class="border-right_grin padding_left padding_right grey">
+              <p id="integer2_4">1</p>
+            </div>
+            <div class="font_size20xp">
+              <p  class="white_space white padding_right"><code class="language-csharp">int[] numbers = new int[3] { 1, 2, 3 }; // создание массива и задание элементов
+numbers[0] = 4; // изменение первого элемента на 4</code></p>  
+            </div>
+          </div>
+          <p>Связный список (`List`) является динамической коллекцией элементов, которые хранятся не последовательно в памяти, а связаны друг с другом указателями. Размер списка может меняться после создания, и в нем можно хранить элементы разных типов данных. Доступ к элементам списка осуществляется по индексу или с помощью перечислителя. Для создания списка в C# используется следующий синтаксис:          </p>
+          <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+            <div class="border-right_grin padding_left padding_right grey">
+              <p id="integer2_4">1</p>
+            </div>
+            <div class="font_size20xp">
+              <p  class="white_space white padding_right"><code class="language-csharp">List<тип_элементов> имя_списка = new List<тип_элементов>();              </code></p>  
+            </div>
+          </div>
+          <p>Например, следующий код создает пустой список целых чисел:          </p>
+          <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+            <div class="border-right_grin padding_left padding_right grey">
+              <p id="integer2_4">1</p>
+            </div>
+            <div class="font_size20xp">
+              <p  class="white_space white padding_right"><code class="language-csharp">List &lt;int&gt; numbers = new List&lt;int&gt;();              </code></p>  
+            </div>
+          </div>
+          <p>List&lt;int&gt; numbers = new List&lt;int&gt;();          </p>
+          <div class=" inline-flex border_gray2px les2 font_size20xp background_olive ">
+            <div class="border-right_grin padding_left padding_right grey">
+              <p id="integer4_4">1</p>
+            </div>
+            <div class="font_size20xp">
+              <p  class="white_space white padding_right"><code class="language-csharp"> List<int> numbers = new List<int>();
+numbers.Add(1); // добавление элемента в конец списка
+numbers.Insert(0, 2); // добавление элемента на заданную позицию
+numbers.Remove(1); // удаление заданного элемента из списка</code></p>  
+            </div>
+          </div>
+          <p>В целом, выбор между массивами и списками зависит от конкретной задачи. Если заранее известна длина коллекции, и нужно быстро получать элементы по индексу, то лучше использовать массивы. Если же длина коллекции неизвестна заранее, и нужно часто добавлять или удалять элементы, то лучше использовать списки. Списки имеют динамический размер и могут быстро добавлять и удалять элементы без необходимости копирования всей коллекции.          </p>
+          <p>Кроме того, у List есть и другие полезные методы, такие как:          </p>
+          <ul>
+            <li>`Insert` - вставляет элемент в список в указанную позицию;            </li>
+            <li>`Remove` - удаляет первое вхождение указанного элемента из списка;            </li>
+            <li>`RemoveAt` - удаляет элемент по указанному индексу из списка;            </li>
+            <li>`Clear` - удаляет все элементы из списка;            </li>
+            <li>`Count` - возвращает количество элементов в списке;            </li>
+            <li>`Contains` - проверяет, содержится ли указанный элемент в списке;            </li>
+            <li>`IndexOf` - возвращает индекс первого вхождения указанного элемента в списке;            </li>
+            <li>`Reverse` - изменяет порядок элементов в списке на обратный.            </li>
+          </ul>
+          <ul>
+            <li>`Length` - возвращает длину массива (количество элементов);            </li>
+            <li>`Rank` - возвращает количество измерений массива;            </li>
+            <li>`GetLength` - возвращает длину указанного измерения массива;            </li>
+            <li>`GetUpperBound` - возвращает максимальный индекс для указанного измерения массива;            </li>
+            <li>`SetValue` - устанавливает значение элемента массива по указанному индексу;            </li>
+            <li>`GetValue` - возвращает значение элемента массива по указанному индексу.            </li>
+          </ul>
+          <p>Также в C# есть специальные классы для работы с массивами, такие как `Array`, `ArraySegment`, `BitArray`, `Buffer`, `ImmutableArray` и др.          </p>
+          <p>В общем, какой из этих типов данных использовать зависит от конкретной задачи. Если вам нужно иметь возможность изменять размер контейнера во время выполнения программы, то лучше использовать List. Если же размер контейнера заранее известен и не будет меняться, то массив будет более эффективным вариантом.          </p>
 
 
 

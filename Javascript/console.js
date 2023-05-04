@@ -25,8 +25,13 @@ createNumberSequence(2, 15, "integer15");
 createNumberSequence(2, 14, "integer14");
 createNumberSequence(2, 13, "integer13");
 createNumberSequence(2, 12, "integer12");
-createNumberSequence(2, 11, "integer11");
-createNumberSequence(2, 9, "integer9");
+
+const containers11 = ["integer11", "integer11_2", "integer11_3", "integer11_4", "integer11_5", "integer11_6"];
+containers11.forEach(container => createNumberSequence(2, 11, container));
+
+const containers9 = ["integer9", "integer9_2", "integer9_3", "integer9_4", "integer9_5", "integer9_6"];
+containers9.forEach(container => createNumberSequence(2, 9, container));
+
 const containers10 = ["integer10", "integer10_2", "integer10_3", "integer10_4", "integer10_5", "integer10_6"];
 containers10.forEach(container => createNumberSequence(2, 10, container));
 
@@ -48,5 +53,5 @@ containers4.forEach(container => createNumberSequence(2, 4, container));
 const containers3 = ["integer3", "integer3_2", "integer3_3","integer3_4"];
 containers3.forEach(container => createNumberSequence(2, 3, container));
 
-const containers2 = ["integer2", "integer2_2", "integer2_3","integer2_4"];
+const containers2 = ["integer2", "integer2_2", "integer2_3","integer2_4","integer2_5","integer2_6","integer2_7","integer2_8"];
 containers2.forEach(container => createNumberSequence(2, 2, container));
