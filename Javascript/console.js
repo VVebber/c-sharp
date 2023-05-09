@@ -9,6 +9,13 @@ function createNumberSequence(start, end, containerId) {
     }
 }
 
+createNumberSequence(2, 100, "integer100");
+createNumberSequence(2, 55, "integer55");
+createNumberSequence(2, 50, "integer50");
+createNumberSequence(2, 40, "integer40");
+createNumberSequence(2, 38, "integer38");
+createNumberSequence(2, 35, "integer35");
+createNumberSequence(2, 34, "integer34");
 createNumberSequence(2, 31, "integer31");
 createNumberSequence(2, 28, "integer28");
 createNumberSequence(2, 25, "integer25");
@@ -21,10 +28,15 @@ createNumberSequence(2, 19, "integer19");
 createNumberSequence(2, 18, "integer18");
 createNumberSequence(2, 17, "integer17");
 createNumberSequence(2, 16, "integer16");
-createNumberSequence(2, 15, "integer15");
 createNumberSequence(2, 14, "integer14");
 createNumberSequence(2, 13, "integer13");
 createNumberSequence(2, 12, "integer12");
+const containers27 = ["integer27", "integer27_2", "integer27_3", "integer27_4", "integer27_5", "integer27_6"];
+containers27.forEach(container => createNumberSequence(2, 27, container));
+
+
+const containers15 = ["integer15", "integer15_2", "integer15_3", "integer15_4", "integer15_5", "integer15_6"];
+containers15.forEach(container => createNumberSequence(2, 15, container));
 
 const containers11 = ["integer11", "integer11_2", "integer11_3", "integer11_4", "integer11_5", "integer11_6"];
 containers11.forEach(container => createNumberSequence(2, 11, container));
