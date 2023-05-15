@@ -269,3 +269,50 @@ font-weight: bold;
     top: 67px; 
      z-index: 0;
   }
+  div[id^="hiddenText"] {
+    display: none;
+  }
+
+
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .fade-in.active {
+    opacity: 1;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222222;
+  }
+  
+  .button {
+    background-color: #ffffff;
+    color: #222222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  .button:active {
+    background-color: black;
+  }
+  .button:focus{
+    background-color: black;
+    color: white
+  }
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+  

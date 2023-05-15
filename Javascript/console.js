@@ -30,13 +30,16 @@ createNumberSequence(2, 17, "integer17");
 createNumberSequence(2, 16, "integer16");
 createNumberSequence(2, 14, "integer14");
 createNumberSequence(2, 13, "integer13");
-createNumberSequence(2, 12, "integer12");
 const containers27 = ["integer27", "integer27_2", "integer27_3", "integer27_4", "integer27_5", "integer27_6"];
 containers27.forEach(container => createNumberSequence(2, 27, container));
 
 
 const containers15 = ["integer15", "integer15_2", "integer15_3", "integer15_4", "integer15_5", "integer15_6"];
 containers15.forEach(container => createNumberSequence(2, 15, container));
+
+const containers12 = ["integer12", "integer12_2", "integer12_3", "integer12_4", "integer12_5", "integer12_6"];
+containers12.forEach(container => createNumberSequence(2, 12, container));
+
 
 const containers11 = ["integer11", "integer11_2", "integer11_3", "integer11_4", "integer11_5", "integer11_6"];
 containers11.forEach(container => createNumberSequence(2, 11, container));
@@ -59,10 +62,10 @@ containers6.forEach(container => createNumberSequence(2, 6, container));
 const containers5 = ["integer5", "integer5_2", "integer5_3", "integer5_4", "integer5_5", "integer5_6"];
 containers5.forEach(container => createNumberSequence(2, 5, container));
 
-const containers4 = ["integer4", "integer4_2", "integer4_3", "integer4_4", "integer4_5", "integer4_6"];
+const containers4 = ["integer4", "integer4_2", "integer4_3", "integer4_4", "integer4_5", "integer4_6", "integer4_7", "integer4_8", "integer4_9", "integer4_10", "integer4_11", "integer4_12", "integer4_13", "integer4_14", "integer4_15", "integer4_16","integer4_17", "integer4_18","integer4_19", "integer4_20","integer4_21", "integer4_22","integer4_23","integer4_25","integer4_26","integer4_27","integer4_28"];
 containers4.forEach(container => createNumberSequence(2, 4, container));
 
-const containers3 = ["integer3", "integer3_2", "integer3_3","integer3_4"];
+const containers3 = ["integer3", "integer3_2", "integer3_3","integer3_4","integer3_5","integer3_6"];
 containers3.forEach(container => createNumberSequence(2, 3, container));
 
 const containers2 = ["integer2", "integer2_2", "integer2_3","integer2_4","integer2_5","integer2_6","integer2_7","integer2_8"];

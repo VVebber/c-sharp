@@ -56,3 +56,23 @@ menuButton.addEventListener('click', function() {
         menuList.style.display = 'none';
     }
 });
+
+function toggleText(id) {
+  let text = document.getElementById(id);
+  if (text.classList.contains("active")) {
+    text.classList.remove("active");
+    setTimeout(() => {
+      text.style.display = "none";
+    }, 300);
+  } else {
+    text.style.display = "block";
+    setTimeout(() => {
+      text.classList.add("active");
+    }, 10);
+  }
+}
+
+
+const container = ["hiddenText", "hiddenText2", "hiddenText3", "hiddenText4", "hiddenText5", "hiddenText6","hiddenText7","hiddenText8","hiddenText9","hiddenText10", "hiddenText11", "hiddenText12", "hiddenText12", "hiddenText13", "hiddenText14", "hiddenText15", "hiddenText16", "hiddenText17", "hiddenText18", "hiddenText19", "hiddenText20", "hiddenText21", "hiddenText22", "hiddenText23", "hiddenText24", "hiddenText25", "hiddenText26", "hiddenText27", "hiddenText28", "hiddenText29", "hiddenText30"];
+container.forEach(container => createNumberSequence(container));
+
